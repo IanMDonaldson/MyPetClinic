@@ -1,8 +1,6 @@
 package ian.donaldson.mypetclinic.services.map;
 
 import ian.donaldson.mypetclinic.model.Vet;
-import ian.donaldson.mypetclinic.model.Vet;
-import ian.donaldson.mypetclinic.services.CrudService;
 import ian.donaldson.mypetclinic.services.VetService;
 import org.springframework.stereotype.Service;
 
@@ -26,7 +24,7 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
 
     @Override
     public Vet save(Vet vet) {
-        return super.save(vet.getId(), vet);
+        return super.save(vet);
     }
 
     @Override

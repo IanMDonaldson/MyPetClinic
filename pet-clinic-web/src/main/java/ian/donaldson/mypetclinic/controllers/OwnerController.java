@@ -26,8 +26,6 @@ public class OwnerController {
     public String listOwners(Model model) {
         /*Model is a component handled by spring for MVC, it injects it into this function here*/
         model.addAttribute("owners", ownerService.findAll());
-        System.out.println(ownerService.findById(1L).toString());
-        model.addAttribute("owner1", ownerService.findById(1L));
         return "owners/index";
     }
 }
